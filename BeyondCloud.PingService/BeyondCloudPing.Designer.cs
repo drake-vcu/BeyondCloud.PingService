@@ -1,6 +1,6 @@
 ﻿namespace BeyondCloud.PingService
 {
-    partial class Service1
+    partial class BeyondCloudPing
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,10 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            this.ServiceName = "Service1";
+            this.eventLog = new System.Diagnostics.EventLog();
+            ((System.ComponentModel.ISupportInitialize)(this.eventLog)).BeginInit();
+            // 
+            // BeyondCloudPing
+            // 
+            this.ServiceName = "Beyond Cloud Ping Service";
+            ((System.ComponentModel.ISupportInitialize)(this.eventLog)).EndInit();
+
         }
 
         #endregion
+
+        private System.Diagnostics.EventLog eventLog;
     }
 }

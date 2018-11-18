@@ -17,7 +17,7 @@ namespace BeyondCloud.PingService
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
-                new Service1()
+                new BeyondCloudPing()
             };
             ServiceBase.Run(ServicesToRun);
         }
